@@ -1,0 +1,3 @@
+[submodule "assests/WeatherWeb"]
+    path = assests/WeatherWeb
+    url = <https://github.com/DanielA1102/WeatherWeb>
