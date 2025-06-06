@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="123"></p>
+</body>
+</html>
+<script>
+
+let userInput = prompt("hoevaak wil je spelen?");
+      sessionStorage.setItem("pogingen", userInput);
+      let pogingen = sessionStorage.getItem("pogingen");
+      console.log(pogingen);
+const x = {
+            Italy: "Rome",
+            Luxembourg: "Luxembourg",
+            Belgium: "Brussels",
+            Denmark: "Copenhagen",
+            Finland: "Helsinki",
+            France: "Paris",
+            Slovakia: "Bratislava",
+            Slovenia: "Ljubljana",
+            Germany: "Berlin",
+            Greece: "Athens",
+            Ireland: "Dublin",
+            Netherlands: "Amsterdam",
+            Portugal: "Lisbon",
+            Spain: "Madrid",
+            Sweden: "Stockholm",
+            United_Kingdom: "London",
+            Cyprus: "Nicosia",
+            Lithuania: "Vilnius",
+            Czech_Republic: "Prague",
+            Estonia: "Tallin",
+            Hungary: "Budapest",
+            Latvia: "Riga",
+            Malta: "Valetta",
+            Austria: "Vienna",
+            Poland: "Warsaw",
+        }
+        let countries = Object.keys(x);
+    
+    let score = 0;
+    score = sessionStorage.getItem("score");
+  
+    let poging = 0;
+    poging = sessionStorage.getItem("poging");
+  
+    for(let i = 0; i < pogingen; i++){
+        let random = Math.floor(Math.random() * countries.length);
+        
+        let land = countries[random];
+  
+        console.log( land, x[land]);
+  
+        let result = prompt(`Wat is de hoofdstad van ${land} 
+        Rome
+        Luxembourg
+        Brussels
+        Copenhagen
+        Helsinki
+        Paris
+        Bratislava
+        Ljubljana
+        Berlin
+        Athens
+        Dublin
+        Amsterdam
+        Lisbon
+        Madrid
+        Stockholm
+        London
+        Nicosia
+        Vilnius
+        Prague
+        Tallin
+        Budapest
+        Riga
+        Valetta
+        Vienna
+        Warsaw
+        `);
+  
+        if(result.toLowerCase() === x[land].toLowerCase()){
+            alert("je bent best slim");
+            score++;
+            sessionStorage.setItem("score", score);
+        }
+        else{
+            alert("jammer je bent heel slecht")
+        }
+  
+        poging++;
+        sessionStorage.setItem("poging", poging);
+    }
+  
+    alert(`Goed: ${score} | Aantal: ${poging}`);
+    
+
+   
+    
+      
+
+
+
+</script>

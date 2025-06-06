@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mijn Portofolio</title>
+</head>
+<body>
+    <header>
+        <nav id="dekstop-nav">
+            <div class="logo"></div>
+            <div>
+                <ul class="nav-links">
+            <li><a href="#over-mij">Over Mij</a></li>
+            <li><a href="#projecten">Projecten</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <section id="profiel">
+        <div id="profiel-foto">
+            <img src="assests/anonymous-user-4268028345.png" alt="profiel-foto">
+        </div>
+        <div class="profiel-text">
+            <p class="profiel-text1">Hallo, ik ben</p>
+            <h1 class="title">Daniel Agyei</h1>
+            <p class="profiel-text2">Frontend Dev</p>
+        <div class="button">
+            <button class="btn btn-color-1" onclick="window.open('assests/CV.pdf')">Download CV</button>
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact</button>
+        </div>
+        <div id="socials">
+            <img src="assests/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/daniel-a-bb09ab236/'">
+        </div>
+
+        </div>
+
+    </section>
+    <section id="over-mij">
+       <p class="over-mij-container">Get to know me</p>
+       <h1 class="Over Mij">Over mij</h1>
+       <p class="over-mij-paragraaf">Welkom op mijn portfolio website. Mijn naam is Daniel en ik ben een student aan ROC Amstelland, gevestigd in Amsterdam, een stad die bekend staat om haar rijke geschiedenis en bruisende culturele scene. In deze levendige omgeving heb ik mijn passie ontdekt voor softwareontwikkeling.
+
+Momenteel ben ik actief op zoek naar een geschikte stageplek als software developer. Mijn tijd aan ROC Amstelland heeft mij een stevige theoretische basis gegeven, maar nu ben ik klaar om deze kennis in de praktijk toe te passen en mijn vaardigheden verder te ontwikkelen binnen een professionele setting.
+
+Ik geloof sterk in de kracht van technologie om de wereld te veranderen en ben vastbesloten om bij te dragen aan deze verandering. Mijn interessegebieden binnen de softwareontwikkeling zijn onder andere webontwikkeling, mobiele applicaties.
+
+Op deze website vind je een overzicht van mijn projecten, waarin ik mijn creativiteit en technische vaardigheden heb toegepast. Ik nodig je uit om een kijkje te nemen en meer te ontdekken over mijn werk en mijn ambitie om een succesvolle carrière na te streven als software developer.
+
+Bedankt voor je interesse en ik kijk ernaar uit om mogelijkheden voor samenwerking te verkennen.</p>
+
+
+
+
+    </section>
+   <section id="projecten">
+    <h2>Projecten</h2>
+    <div class="projecten">
+        <h3>Project 1</h3>
+        <p>Hoofdsteden spel</p>
+        <a href="assests/Hoofdstedenspel/EO-Daniel-1.html">Link naar Project 1</a>
+    </div>
+    <div class="projecten">
+        <h3>Project 2</h3>
+        <p>X vs O spel</p>
+        <a href="assests/eieren/">Link to Project 2</a>
+    </div>
+    <div class="projecten">
+        <h3>Project 3</h3>
+        <p>WeatherWeb</p>
+        <a href="assests/WeatherWeb/">Link to Project 3</a>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Naam" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <textarea id="message" name="message" placeholder="Bericht" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</section>
+</body>
+</html>
